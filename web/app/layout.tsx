@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Space_Mono } from "next/font/google";
 import "./globals.css";
+import CookieBanner from "./components/CookieBanner";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-display",
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${bricolage.variable} ${spaceMono.variable} antialiased`}
       >
         {children}
+        <CookieBanner />
       </body>
     </html>
   );
