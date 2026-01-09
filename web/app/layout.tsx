@@ -18,6 +18,19 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Persistent Stopwatch",
   description: "A stopwatch that keeps running even when your browser closes.",
+  openGraph: {
+    title: "Persistent Stopwatch",
+    description:
+      "A stopwatch that keeps running even when your browser closes.",
+    type: "website",
+    siteName: "Persistent Stopwatch",
+  },
+  twitter: {
+    card: "summary",
+    title: "Persistent Stopwatch",
+    description:
+      "A stopwatch that keeps running even when your browser closes.",
+  },
 };
 
 export default function RootLayout({
